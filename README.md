@@ -1,17 +1,59 @@
-# Resume-Parser-Using-NLP
-## Built Resume Parser using Natural Language Processing(NLP) in Python.
-Intially check extension of file either .pdf or .docx. Convert pdf or docx file content into text. Then using NLP-Spacy,nltk,. libraries extract Name, Mobile number, Mail id, Qualification, Technical Skills from resume.
+# 📄 Resume Parser Using NLP
 
-### NLP Libraries used
-### 1. spaCy 
-  spaCy is a free, open-source library for advanced Natural Language Processing (NLP) in Python. spaCy is designed specifically for production use and helps you build applications that process and “understand” large volumes of text. It can be used to build information extraction or natural language understanding systems.
-### 2. NLTK
-  The Natural Language Toolkit (NLTK) is a platform used for building Python programs that work with human language data for applying in statistical natural language processing (NLP). It contains text processing libraries for tokenization, parsing, classification, stemming, tagging and semantic reasoning.
-        
-### .py files:
-* Extract text: text.py
-* Name: name.py
-* Mobile Number: mbl_number.py
-* Mail id: mail.py
-* Qualification: qualification.py
-* Technical Skills: skills.py
+Welcome to the **Resume Parser using NLP** project! This repository contains a tool that extracts and structures information from resumes using Natural Language Processing (NLP). 🧠
+
+## 🚀 Project Overview
+
+Hiring processes often involve sifting through numerous resumes to find the right candidates. This project aims to automate the extraction of key information such as name, contact details, skills, experience, and education from resumes, making the hiring process more efficient.
+
+### 🌟 Features
+
+- **Data Extraction:** Extracts key details like name, contact information, skills, work experience, and education from resumes.
+- **NLP Techniques:** Utilizes various NLP techniques such as tokenization, named entity recognition (NER), and regex for information extraction.
+- **Multiple Formats:** Supports parsing resumes in different formats like PDF and DOCX.
+- **Structured Output:** Outputs structured data in a JSON format for easy integration with other systems.
+
+## 🛠️ Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/harsh20wardhan/resume_parser_using_nlp.git
+cd resume_parser_using_nlp
+```
+
+### 2. Install dependencies
+
+Ensure you have Python 3.x installed. Then, install the required packages using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the project
+
+To start parsing resumes, run:
+
+```bash
+python parser.py --input path/to/resume.pdf --output output.json
+```
+
+Replace `path/to/resume.pdf` with the path to the resume file you want to parse, and `output.json` with the desired output file.
+
+## 📊 Usage
+
+- **Input Files:** Place your resume files in the `input/` directory or specify their path.
+- **Output Files:** Parsed data will be saved in the `output/` directory or at the path you specify.
+- **Customization:** Modify the `config.yaml` file to adjust the parsing settings.
+
+## 📈 Results
+
+The parser extracts information with a high level of accuracy, structuring the data into a JSON format that can be easily used in other applications or systems.
+
+## 🤝 Contributing
+
+We welcome contributions to improve the parser and add new features! Feel free to fork the repository, make your changes, and submit a pull request.
+
+## 📬 Contact
+
+For any questions, suggestions, or feedback, feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/harsh20wardhan/) or open an issue.
